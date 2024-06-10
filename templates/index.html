@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excel Reader</title>
+  </head>
+  <body>
+    <form action={{url_for("uploadEx")}} method="POST" enctype="multipart/form-data">
+      <input
+        type="file"
+        accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel, text/csv"
+        id="data"
+        name="data"
+      />
+      <br /><br />
+      <button type="submit">Upload</button>
+      <button type="reset">clear</button>
+    </form>
+  </body>
+</html>
